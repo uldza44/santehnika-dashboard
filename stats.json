@@ -1,0 +1,59 @@
+{
+  "total_leads": 87,
+  "revenue": 1305,
+  "monthly": {
+    "10/2025": 3,
+    "11/2025": 8,
+    "12/2025": 17,
+    "01/2026": 59
+  },
+  "sources": {
+    "santehnikisriga.lv": 67,
+    "santehnikisadazi.lv": 6,
+    "santehnikisimanta.lv": 4,
+    "avarijassantehnikis.lv": 3,
+    "santehnikisjurmala.lv": 2,
+    "santehnikismarup\u0435.lv": 2,
+    "santehnikissalaspils.lv": 1,
+    "santehnikisagenskalns.lv": 1,
+    "santehnikisziepniekkalns.lv": 1
+  },
+  "problems": {
+    "noplude": 13,
+    "aizserejums": 11,
+    "nopl\u016bde": 10,
+    "cits": 8,
+    "av\u0101rija": 7,
+    "aizs\u0113r\u0113jums": 7,
+    "boileris": 6,
+    "citi": 5,
+    "apkure": 5,
+    "kanaliz\u0101cija": 4
+  },
+  "urgency": {
+    "asap": 29,
+    "\u0161odien": 24,
+    "30min": 15,
+    "\u0161oned\u0113\u013c": 15,
+    "\u0101rk\u0101rtas (1-2h)": 2,
+    "unknown": 1,
+    "iepl\u0101not": 1
+  },
+  "districts": {
+    "centrs": 17,
+    "purvciems": 8,
+    "cits": 6,
+    "imanta": 5,
+    "teika": 5,
+    "jugla": 5,
+    "ziepniekkalns": 3,
+    "\u0101da\u017ei": 3,
+    "m\u0101rupe": 3,
+    "kengarags": 2,
+    "\u0101genskalns": 2,
+    "\u0137engarags": 2,
+    "pier\u012bga": 2,
+    "carnikava": 2,
+    "i\u013c\u0123uciems": 2
+  }
+}
