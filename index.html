@@ -31,11 +31,8 @@
         th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #eee; }
         th { background: #f8f9fa; font-weight: 600; color: #555; font-size: 0.85rem; text-transform: uppercase; }
         tr:hover { background: #f8f9fa; }
-        .badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
-        .badge.high { background: #fee2e2; color: #dc2626; }
-        .badge.medium { background: #fef3c7; color: #d97706; }
-        .badge.low { background: #d1fae5; color: #059669; }
         .footer { text-align: center; padding: 30px; color: #888; font-size: 0.9rem; }
+        .data-note { background: #fff3cd; padding: 15px; border-radius: 10px; margin-bottom: 20px; text-align: center; color: #856404; }
         @media (max-width: 768px) {
             .header h1 { font-size: 1.8rem; }
             .stats-row { grid-template-columns: 1fr 1fr; }
@@ -46,31 +43,35 @@
 <body>
     <div class="header">
         <h1>📊 Santehnikas Lead Dashboard</h1>
-        <p>Lead generation performance across 21 microsites in Riga</p>
+        <p>Lead generation performance across microsites in Riga</p>
     </div>
     
     <div class="container">
+        <div class="data-note">
+            📌 Data based on <strong>87 actual leads</strong> from Google Sheet (Oct 2025 - Jan 2026)
+        </div>
+        
         <!-- Key Stats -->
         <div class="stats-row">
             <div class="stat-card leads">
                 <div class="label">Total Leads</div>
-                <div class="value">88</div>
-                <div class="sub">From Oct 2025 - Jan 2026</div>
+                <div class="value">87</div>
+                <div class="sub">Oct 2025 - Jan 2026</div>
             </div>
             <div class="stat-card revenue">
                 <div class="label">Revenue Potential</div>
-                <div class="value">€1,320</div>
-                <div class="sub">€15 per lead × 88</div>
+                <div class="value">€1,305</div>
+                <div class="sub">€15 per lead × 87</div>
             </div>
             <div class="stat-card emergency">
                 <div class="label">Emergency Rate</div>
-                <div class="value">38%</div>
-                <div class="sub">378 ASAP/Emergency calls</div>
+                <div class="value">34%</div>
+                <div class="sub">30 ASAP/Emergency calls</div>
             </div>
             <div class="stat-card sites">
                 <div class="label">Active Microsites</div>
-                <div class="value">21</div>
-                <div class="sub">District-targeted sites</div>
+                <div class="value">9</div>
+                <div class="sub">With leads captured</div>
             </div>
         </div>
 
@@ -100,7 +101,7 @@
 
         <!-- Microsite Performance Table -->
         <div class="table-container">
-            <h3>🌐 Microsite Performance</h3>
+            <h3>🌐 Microsite Performance (All Sources)</h3>
             <table>
                 <thead>
                     <tr>
@@ -112,33 +113,22 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>santehnikisriga.lv</td><td>312</td><td>31%</td><td>42%</td><td>€4,680</td></tr>
-                    <tr><td>santehnikisimanta.lv</td><td>89</td><td>9%</td><td>28%</td><td>€1,335</td></tr>
-                    <tr><td>santehnikiscentrs.lv</td><td>76</td><td>8%</td><td>35%</td><td>€1,140</td></tr>
-                    <tr><td>santehnikispurvciems.lv</td><td>71</td><td>7%</td><td>31%</td><td>€1,065</td></tr>
-                    <tr><td>santehnikiskengarags.lv</td><td>52</td><td>5%</td><td>38%</td><td>€780</td></tr>
-                    <tr><td>santehnikisplavnieki.lv</td><td>45</td><td>5%</td><td>29%</td><td>€675</td></tr>
-                    <tr><td>santehnikiszolitude.lv</td><td>38</td><td>4%</td><td>25%</td><td>€570</td></tr>
-                    <tr><td>santehnikisagenskalns.lv</td><td>34</td><td>3%</td><td>32%</td><td>€510</td></tr>
-                    <tr><td>santehnikisilguciems.lv</td><td>31</td><td>3%</td><td>27%</td><td>€465</td></tr>
-                    <tr><td>santehnikisteika.lv</td><td>28</td><td>3%</td><td>30%</td><td>€420</td></tr>
-                    <tr><td>santehnikisziepniekkalns.lv</td><td>25</td><td>3%</td><td>34%</td><td>€375</td></tr>
-                    <tr><td>santehnikisjugla.lv</td><td>22</td><td>2%</td><td>36%</td><td>€330</td></tr>
-                    <tr><td>santehnikismezaparks.lv</td><td>18</td><td>2%</td><td>24%</td><td>€270</td></tr>
-                    <tr><td>santehnikismarupe.lv</td><td>16</td><td>2%</td><td>38%</td><td>€240</td></tr>
-                    <tr><td>santehnikiskekava.lv</td><td>12</td><td>1%</td><td>28%</td><td>€180</td></tr>
-                    <tr><td>santehnikissalaspils.lv</td><td>8</td><td>1%</td><td>35%</td><td>€120</td></tr>
-                    <tr><td>santehnikisadazi.lv</td><td>7</td><td>1%</td><td>40%</td><td>€105</td></tr>
-                    <tr><td>santehnikisolaine.lv</td><td>5</td><td>0.5%</td><td>22%</td><td>€75</td></tr>
-                    <tr><td>santehnikisjurmala.lv</td><td>4</td><td>0.4%</td><td>38%</td><td>€60</td></tr>
-                    <tr><td>avarijassantehnikis.lv</td><td>3</td><td>0.3%</td><td>100%</td><td>€45</td></tr>
+                    <tr><td>santehnikisriga.lv</td><td>67</td><td>77%</td><td>34%</td><td>€1,005</td></tr>
+                    <tr><td>santehnikisadazi.lv</td><td>6</td><td>7%</td><td>50%</td><td>€90</td></tr>
+                    <tr><td>santehnikisimanta.lv</td><td>4</td><td>5%</td><td>25%</td><td>€60</td></tr>
+                    <tr><td>avarijassantehnikis.lv</td><td>3</td><td>3%</td><td>100%</td><td>€45</td></tr>
+                    <tr><td>santehnikisjurmala.lv</td><td>2</td><td>2%</td><td>50%</td><td>€30</td></tr>
+                    <tr><td>santehnikismarupе.lv</td><td>2</td><td>2%</td><td>100%</td><td>€30</td></tr>
+                    <tr><td>santehnikissalaspils.lv</td><td>1</td><td>1%</td><td>0%</td><td>€15</td></tr>
+                    <tr><td>santehnikisagenskalns.lv</td><td>1</td><td>1%</td><td>100%</td><td>€15</td></tr>
+                    <tr><td>santehnikisziepniekkalns.lv</td><td>1</td><td>1%</td><td>100%</td><td>€15</td></tr>
                 </tbody>
             </table>
         </div>
     </div>
 
     <div class="footer">
-        <p>Data: Santehnikas Pieteikumi (Oct 2025 - Jan 2026) | Revenue: €15/lead</p>
+        <p>Data: Santehnikas Pieteikumi (87 leads, Oct 2025 - Jan 2026) | Revenue: €15/lead</p>
     </div>
 
     <script>
@@ -149,7 +139,7 @@
                 labels: ['Oct 2025', 'Nov 2025', 'Dec 2025', 'Jan 2026'],
                 datasets: [{
                     label: 'Leads',
-                    data: [45, 89, 134, 156],
+                    data: [4, 8, 17, 58],
                     backgroundColor: ['#667eea', '#667eea', '#667eea', '#27ae60'],
                     borderRadius: 8
                 }]
@@ -168,10 +158,10 @@
         new Chart(document.getElementById('problemChart'), {
             type: 'doughnut',
             data: {
-                labels: ['Noplūde (Leak)', 'Aizsērējums (Clog)', 'Boileris', 'Apkure (Heating)', 'Citi (Other)'],
+                labels: ['Noplūde (Leak)', 'Aizsērējums (Clog)', 'Boileris', 'Avārija (Emergency)', 'Apkure (Heating)', 'Citi (Other)'],
                 datasets: [{
-                    data: [35, 28, 18, 12, 7],
-                    backgroundColor: ['#e74c3c', '#f39c12', '#3498db', '#9b59b6', '#95a5a6']
+                    data: [22, 18, 7, 7, 5, 28],
+                    backgroundColor: ['#e74c3c', '#f39c12', '#3498db', '#dc2626', '#9b59b6', '#95a5a6']
                 }]
             },
             options: {
@@ -186,10 +176,10 @@
         new Chart(document.getElementById('urgencyChart'), {
             type: 'pie',
             data: {
-                labels: ['ASAP/Emergency', '30min-2h', 'Today', 'This Week'],
+                labels: ['ASAP/Emergency', 'Today', '30min', 'This Week'],
                 datasets: [{
-                    data: [38, 30, 20, 12],
-                    backgroundColor: ['#dc2626', '#f97316', '#eab308', '#22c55e']
+                    data: [30, 24, 16, 15],
+                    backgroundColor: ['#dc2626', '#eab308', '#f97316', '#22c55e']
                 }]
             },
             options: {
@@ -204,10 +194,10 @@
         new Chart(document.getElementById('districtChart'), {
             type: 'bar',
             data: {
-                labels: ['Centrs', 'Purvciems', 'Imanta', 'Ziepniekkalns', 'Jugla', 'Teika', 'Āgenskalns', 'Kengarags'],
+                labels: ['Centrs', 'Purvciems', 'Imanta', 'Teika', 'Jugla', 'Ziepniekkalns', 'Ādaži', 'Mārupe'],
                 datasets: [{
                     label: 'Leads',
-                    data: [98, 71, 52, 45, 38, 34, 31, 28],
+                    data: [17, 8, 5, 5, 5, 3, 3, 3],
                     backgroundColor: '#667eea',
                     borderRadius: 8
                 }]
